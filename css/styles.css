@@ -1,18 +1,50 @@
+:root {
+    --primary-text-color: #212121;
+    --text-color: #757575; 
+    --accent-color: #2196F3;
+    --original-black-color: #000; 
+    --original-white-color: #fff;
+    --primary-background-color: #2F303A;
+    --white-background-color: #F5F4FA;
+    --gray-color: rgba(255, 255, 255, 0.6);
+    --white-second-section-color: #f5f5f5;
+}
 body {
     font-family: "roboto", sans-serif;
-    color: #212121;
+    color: var(--primary-text-color);
+    background-color: var(--original-white-color);
+}
+ul {
+    list-style-type: none ;
+}
+a {
+    text-decoration: none;
 }
 /*-----------------------------------------HEADER-------------------------------*/
+.header {
+    background-color: var(--original-white-color);
+}
 .header-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--primary-text-color)
 }
 .header-link:hover,
 .header-link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
+}
+.header-nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+    color: var(--accent-color);
 }
 .logo {
     font-family: "raleway";
@@ -20,7 +52,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #000000;
+    color: var(--original-black-color);
 }
 .web {
     font-family: "raleway";
@@ -28,39 +60,53 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 /*-----------------------------------------MAIN (INDEX.HTML)---------------------------------*/
+.section-second {
+    background-color: var(--white-second-section-color) ;
+}
+.section-third {
+    background-color: var(--white-background-color);
+}
+.main-list {
+    background-color: var(--original-white-color);
+}
 .title-h1 {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #FFFFFF;
-    background-color: #2F303A;
+    text-transform: uppercase;
+    color: var(--original-white-color);
+}
+.section {
+    background-color: var(--primary-background-color);
 }
 .btn {
-    font-weight: 500;
+    font-family: "roboto";
+    font-weight: 700;
     font-size: 16px;
-    line-height: 1.63;
-    letter-spacing: 0.03em;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
     cursor: pointer;
-    color: #FFFFFF;
-    background-color: #2196F3; 
+    color: var(--original-white-color);
+    background-color: var(--accent-color); 
 }
 .main-list-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: #212121;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
 }
 .main-list-text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-color);
 }
 .title-h2 {
     font-weight: 700;
@@ -68,7 +114,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 .main-list-title-h3 {
     font-weight: 500;
@@ -76,58 +122,65 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 .main-list-txt {
     font-size: 16px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #757575; 
+    color: var(--text-color); 
 }
 /*----------------------------------------------MAIN (PORTFOLIO.HTML)-------------------------------------*/
 .main-button {
+   font-family: "roboto";
    font-weight: 500;
    font-size: 16px;
    line-height: 1.63;
    text-align: center;
    letter-spacing: 0.03em;
    cursor: pointer;
-   color: #212121;
-   background-color: #F5F4FA;
+   color: var(--primary-text-color);
+   background-color: var(--white-background-color);
 }
 .main-button:hover,
 .main-button:focus {
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--original-white-color);
+    background-color: var(--accent-color);
 }
 .main-list-title-h2 {
-    font-size: 700;
-    size: 18px;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 .txt {
-    size: 16px;
+    font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-color);
 }
-/*---------------------------------------------FOOTER*******************************************/
+/*---------------------------------------------FOOTER------------------------------------------*/
+.footer {
+    background-color: var(--primary-background-color);
+}
+.address {
+    font-style: normal;
+}
 .address-link {
-    font-size: 400;
-    size: 14px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
-    background-color: #2F303A;;
+    color: var(--original-white-color);
+    background-color: var(--primary-background-color);
 }
 .footer-link {
-    font-size: 400;
-    size: 14px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    background-color: #2F303A;;
+    color: var(--gray-color);
+    background-color: var(--primary-background-color);
 }
